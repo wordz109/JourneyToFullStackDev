@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Its a Survey Form</p>
+    </header>
+    <main>
+        <form id="survey-form">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name" id="name-label">Name (required):</label>
+                <input type="text" id="name" placeholder="Ex. John Doe" required>
+                <label for="email" id="email-label">Email Address (required):</label>
+                <input type="email" required id="email" placeholder="Ex. example@email.com">
+                <label for="number" id="number-label">Age (Optional):</label>   
+                <input type="number" id="number"min="3" max="100" placeholder="21">
+            </fieldset>
+
+            <fieldset>
+                <legend>Ratings</legend>
+                <label for="dropdown" id="experience">How's your experience?</label>
+                <select id="dropdown">
+                    <option value="poor">Poor</option>
+                    <option value="satisfactory">Satisfactory</option>
+                    <option value="good">Good</option>
+                    <option value="very-good">Very Good</option>
+                    <option selected value="excellent">Excellent</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Will you come again?</legend>
+                <label for="yes">Yes</label>
+                <input type="radio" id="yes" name="form-option" value="yes">
+                <label for="No">No</label>
+                <input type="radio" id="no" name="form-option" value="no">
+            </fieldset>
+            <fieldset>
+                <label for="check1">check1</label>
+                <input 
+                    type="checkbox"
+                    id="check1"
+                    name="check1"
+                    value="check1"
+                />
+                <label for="check2">check2</label>
+                <input 
+                    type="checkbox"
+                    id="check2"
+                    name="check2"
+                    value="check2"
+                />
+                <label for="check3">check3</label>
+                <input 
+                    type="checkbox"
+                    id="check3"
+                    name="check3"
+                    value="check3"
+                />
+            </fieldset>
+            <label for="comments">Other Comments</label>
+            <textarea cols="20" rows="5" name="comments" id="comments"></textarea>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </main>
+  </body>
+</html>
